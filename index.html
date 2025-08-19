@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-HONG</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                
+                <p class="myName"><i class="fa-regular fa-circle-user"></i> <span>H</span>ONG.</p>
+                <!-- <img src="images/logo.png" alt="logo" class="logo"> -->
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Project</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p><i class="fa-regular fa-image"></i> Web Designer</p>
+                <h1>Hi, I'm <span>Hong</span> From Korea</h1>
+            </div>
+<!-- -------------circle bar------------------ -->
+            <div class="skill">
+                <div class="outer">
+                    <div class="inner">
+                        <div id="number">
+                            
+                        </div>
+                    </div>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                    <defs>
+                    <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#e91e63" />
+                        <stop offset="100%" stop-color="#673ab7" />
+                    </linearGradient>
+                    </defs>
+                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                </svg>
+            </div>    
+        </div>
+    </div>
+<!-- --------------about---------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/hong.jpg" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm self-taught in web design and constantly exploring new ideas and tools to improve my craft.  
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>2024 - Current</span><br>HTML / CSS / Javascript</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2012 - Current</span><br>FastRetailing UNIQLO</li>
+                            <li><span>2010 - 2012</span><br>WooSuk University Assistant Professor in the Department of Japanese Language and Literature.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024 - Current</span><br>self-studying HTML/CSS/JavaScript using online tutorials.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- -----------------services------------------ -->
+    <div id="services">
+        <div class="container">
+            
+            <h1 class="sub-title"><i class="fa-solid fa-diagram-project"></i> Mini Project</h1>
+            <div class="services-list">
+                <div class="services">
+                        <i class="fa-solid fa-code"></i>
+                        <h2>To Do App</h2>
+                        <p>The To Do App helps you organize tasks, stay focused, and boost productivity. Add, complete, and delete tasks with ease. Your daily goals, all in one place.</p>
+                        <a href="https://hongstory.github.io/todoapp" target="_blank">See more</a>
+                </div>
+                <div class="services">
+                        <i class="fa-solid fa-crop-simple"></i>
+                        <h2>Age Calculator</h2>
+                        <p>This Age Calculator helps you quickly find your exact age in years, months, and days. Just enter your birthdate and get instant results. Simple and Fast!</p>
+                        <a href="https://hongstory.github.io/ageCalculator" target="_blank">See more</a>
+                </div>
+                <div class="services">
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>Create QRcode</h2>
+                        <p>Effortlessly create customized QR codes in seconds! This app helps you generate QR codes for websites, contact info, and more. Simple, fast, and versatile — perfect for business cards, posters, digital sharing, or everyday convenience.</p>
+                        <a href="https://hongstory.github.io/createQRcode" target="_blank">See more</a>
+                </div>
+            </div>    
+        </div>
+<!-- -----------------clone project-----------------         -->
+        <div class="container">
+            <h1 class="sub-title"><i class="fa-solid fa-copy"></i> Clone Project</h1>
+            <div class="services-list">
+                <div class="services">
+                        <i class="fa-brands fa-square-youtube"></i>
+                        <h2>Youtube Clone</h2>
+                        <p>A front-end Youtube clone built with HTML, CSS, and JavaScript. It replicates key UI components like profile pages, connection buttons, and a responsive layout — without backend integration.</p>
+                        <a href="https://hongstory.github.io/YoutubeClone" target="_blank">See more</a>
+                </div>
+                <div class="services">
+                        <i class="fa-brands fa-staylinked"></i>
+                        <h2>LinkedIn Clone</h2>
+                        <p>A front-end LinkedIn clone built with HTML, CSS, and JavaScript. It replicates key UI components like profile pages, connection buttons, and a responsive layout — without backend integration.</p>
+                        <a href="https://hongstory.github.io/linkedinClone" target="_blank">See more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ---------------portfolio---------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"><i class="fa-solid fa-cubes"></i> My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="work1">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>This project focuses exclusively on the front-end development of a Facebook-style interface. Ideal for showcasing skills in responsive design, component structuring, and user experience optimization — without involving back-end logic or databases.</p>
+                        <a href="https://hongstory.github.io/socialbook" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="work2">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Enjoy your favorite tunes with ease and style! This app is a simple and intuitive music player that supports various audio formats..</p>
+                        <a href="https://hongstory.github.io/musicPlayer/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="work3">
+                    <div class="layer">
+                        <h3>Simple Quiz</h3>
+                        <p>Challenge your mind with quick and fun quizzes! This app lets you test your knowledge across various topics with simple multiple-choice questions. Perfect for learning, practicing, or just having fun — anytime, anywhere.</p>
+                        <a href="https://hongstory.github.io/Quiz" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a class="btn" href="#">See more</a>
+        </div>
+    </div>
+<!-- ----------------contact------------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> hireMe@example.com</p>
+                    <p class="phone"><i class="fa-solid fa-phone"></i> 0123456789</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/hongstory" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.youtube.com/channel/UCNNiykNaNXS3--Am-DKhCFg" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <!-- <a class="btn btn2" href="images/my-cv.pdf" download>Download Cv</a> -->
+                    <!-- <a class="btn btn2" href="#" >Download Cv</a> -->
+                    <p>Check My Github and YouTube Channel!</p>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @HONG.<i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script>
+        let tabLinks = document.getElementsByClassName("tab-links");
+        let tabContents = document.getElementsByClassName("tab-contents");
+        function openTab(tabName) {
+            for(tabLink of tabLinks){
+                tabLink.classList.remove("active-link");
+            }
+            for(tabContent of tabContents){
+                tabContent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        let sideMenu = document.getElementById("sideMenu");
+
+        function openMenu(){
+            sideMenu.style.right = "0";
+        }
+        function closeMenu(){
+            sideMenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz96k_oSM7YYhKBMdmbcFHN-MrrGdEqLgrXVH8dCTTseccz4N20BU5kSmK0UlnCwuQ/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+
+
+    form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!";
+                setTimeout(function(){
+                    msg.innerHTML = "";
+                },5000);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message));
+        });
+    </script>
+<!-- ---------------circle bar---------------- -->
+    <script>
+        let number = document.getElementById("number");
+        let counter = 0;
+        setInterval(() => {
+            if (counter === 100) {
+                clearInterval();
+            }else{
+                counter++;
+                number.innerHTML = counter + "%"
+            }
+            
+        }, 18);
+    </script>
+</body>
+</html>
